@@ -9,37 +9,37 @@ footer{
 
 /*dark sections*/
 #sectionHero, #sectionContact{
-/*background: url('../images/backgroundNav.png') repeat;*/
 	background:$darkBackground;
 	color:$lightText;
 }
 
 /*navbar*/
 .navbar-inverse{
-	/*background: url('../images/backgroundNav.png');*/
 	background:$darkBackground;
-}
 
-.fav-header, .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
-	color:$lightText;
-}
-
-.active-nav-icon{
-	color:$accentColor;
+	.fav-header,.navbar-nav > li > a, .navbar-brand{
+		color:$lightText;
+	}
+	.fav-header-active{
+		color:$accentColor;
+	}	
 }
 
 /*section Ervaring*/
-.tableCells h2{
-	color:$accentColor;
+.tableCells{
+	h3{
+		color:$accentColor;
+	}
+	h3.tertiaryFont,h3.fourthFont{
+		color:$darkText;
+	}
 }
 
-.tableCells .tertiaryFont, .tableCells .fourthFont{
-	color:$darkText;
-}
-
-li .glyphicon{
-	color:$accentColor;
-}
+#sectionErvaring li{
+	.fa-li,.glyphicon{
+		color:$accentColor;
+	}
+}	
 
 /*section Referenties*/
 .controlArrow.next{
@@ -49,3 +49,13 @@ li .glyphicon{
 .controlArrow.prev{
 	border-color: transparent $accentColor transparent transparent;
 }
+
+/*sectionContact*/
+#sectionContact{
+	a{
+		color:$lightText;
+	}
+	footer[role="contentinfo"] a{
+		color:$accentColor;
+	}
+}  

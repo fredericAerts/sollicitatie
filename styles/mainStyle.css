@@ -2,74 +2,64 @@ body {
   font-family: "Oswald", sans-serif;
   font-size: 14px; }
 
-h1, h2 {
-  font-family: "Fredericka the Great", cursive; }
-
-.title-section {
+h1 {
   font-family: "Rye", cursive; }
 
+h2 {
+  font-family: "Fredericka the Great", cursive; }
+
 .subtitle-section {
-  font-family: "Oswald", sans-serif;
   font-size: 1.1em;
   width: 325px;
   /*equal to divider*/
   margin: 10px auto; }
 
-.tableCells h2 {
-  font-family: "Oswald", sans-serif;
+/*navbar*/
+.navbar-inverse {
+  font-family: "Cabin Sketch", cursive; }
+
+/*sectionHero*/
+#sectionHero h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 2em; }
+#sectionHero h2 {
+  font-size: 1.5em; }
+
+/*sectionErvaring*/
+#sectionErvaring h2 {
+  font-size: 2.7em; }
+
+.tables h3 {
   font-weight: 700;
   /*only on Oswald*/
   font-size: 2.8em;
   line-height: 0.9em; }
-
-.tableCells .tertiaryFont {
-  font-family: "Titan One", cursive; }
-
-.tableCells .fourthFont {
-  font-family: "Irish Grover", cursive; }
-
-.tableCells .tertiaryFont, .tableCells .fourthFont {
+.tables h3.tertiaryFont, .tables h3.fourthFont {
+  font-family: "Titan One", cursive;
   font-size: 2em;
   line-height: 1em; }
-
-.starredTitle {
-  font-size: 1.3em; }
-
-#contentHero h1, #contentHero h2 {
-  font-family: "Fredericka the Great", cursive;
-  color: white; }
-
-.navbar-inverse {
-  font-family: "Cabin Sketch", cursive; }
-
-#contentHero h1 {
-  font-size: 2em; }
-
-#contentHero h2 {
-  font-size: 1.5em; }
+.tables h3.fourthFont {
+  font-family: "Irish Grover", cursive; }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  #contentHero h1 {
+  #sectionHero h1 {
     font-size: 3em; }
-
-  #contentHero h2 {
+  #sectionHero h2 {
     font-size: 1.9em; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  #contentHero h1 {
+  #sectionHero h1 {
     font-size: 3.5em; }
-
-  #contentHero h2 {
+  #sectionHero h2 {
     font-size: 2.5em; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  #contentHero h1 {
+  #sectionHero h1 {
     font-size: 4em; }
-
-  #contentHero h2 {
+  #sectionHero h2 {
     font-size: 3em; } }
 body {
   color: #3b3b3b;
@@ -80,39 +70,37 @@ footer {
 
 /*dark sections*/
 #sectionHero, #sectionContact {
-  /*background: url('../images/backgroundNav.png') repeat;*/
   background: #3b3b3b;
   color: white; }
 
 /*navbar*/
 .navbar-inverse {
-  /*background: url('../images/backgroundNav.png');*/
   background: #3b3b3b; }
-
-.fav-header, .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
-  color: white; }
-
-.active-nav-icon {
-  color: #ab1539; }
+  .navbar-inverse .fav-header, .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+    color: white; }
+  .navbar-inverse .fav-header-active {
+    color: #ab1539; }
 
 /*section Ervaring*/
-.tableCells h2 {
+.tableCells h3 {
   color: #ab1539; }
-
-.tableCells .tertiaryFont, .tableCells .fourthFont {
+.tableCells h3.tertiaryFont, .tableCells .tables h3.fourthFont, .tables .tableCells h3.fourthFont, .tableCells h3.fourthFont {
   color: #3b3b3b; }
 
-li .glyphicon {
+#sectionErvaring li .fa-li, #sectionErvaring li .glyphicon {
   color: #ab1539; }
 
 /*section Referenties*/
-.controlArrow.next {
+.controlArrow.next, .controlArrow.prev {
   border-color: transparent transparent transparent #ab1539; }
 
 .controlArrow.prev {
   border-color: transparent #ab1539 transparent transparent; }
 
-.fa-li {
+/*sectionContact*/
+#sectionContact a {
+  color: white; }
+#sectionContact footer[role="contentinfo"] a {
   color: #ab1539; }
 
 .fav-header {
@@ -133,11 +121,9 @@ li .glyphicon {
 #arrowHero:hover {
   cursor: pointer; }
 
-.controlArrow {
+.controlArrow.next, .controlArrow.prev {
   margin-top: -20px;
-  /*centered vertically*/ }
-
-.controlArrow.next {
+  /*centered vertically*/
   border-width: 20px 0px 20px 20px; }
 
 .controlArrow.prev {
@@ -146,10 +132,6 @@ li .glyphicon {
 .subtitle-divider {
   width: 300px;
   margin-bottom: 30px; }
-
-.tables .divider {
-  width: 200px;
-  margin-top: -15px; }
 
 li .glyphicon {
   float: right; }
@@ -163,26 +145,48 @@ section, article, header, footer, hgroup {
 a, a:hover, a:visited, a:active, a:focus {
   text-decoration: none; }
 
-#sectionContact a {
-  color: white; }
-
-footer[role="contentinfo"] {
-  position: absolute;
-  bottom: 5px;
-  left: 5px; }
-
-#sectionContact footer[role="contentinfo"] a {
-  color: #ab1539; }
+blockquote {
+  width: 60%;
+  margin: auto;
+  border: none; }
 
 .clearfix {
   clear: both; }
 
-.tables {
-  display: table;
+.section {
+  text-align: center; }
+
+hgroup[role="sectionhead"] {
+  margin-top: 65px; }
+
+/*sectionHero*/
+img#myHead {
+  position: fixed;
+  width: 120px;
+  z-index: 1031;
+  /*above navbar*/
+  border: 14px solid #ab1539;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  border-radius: 500px; }
+
+#contentHero {
+  position: relative;
+  top: 50%; }
+
+/*sectionErvaring*/
+.mainTitle-ervaring {
+  margin-top: 20px; }
+
+.tables, #skillsWrapper {
   width: 90%;
   margin: auto;
+  border-top: 2px solid #ab1539; }
+
+.tables {
+  display: table;
   border-spacing: 10px;
-  border-top: 2px solid #ab1539;
   text-align: left; }
 
 .tableRows {
@@ -191,28 +195,20 @@ footer[role="contentinfo"] {
 .tableCells {
   display: table-cell;
   vertical-align: top;
-  padding: 5px; }
+  padding: 5px;
+  width: 50%; }
 
-.tables h2 {
+.tables h3 {
   margin-top: 0px; }
-
 .tables h4, .tables ul {
   margin-top: -5px; }
-
-.tables .hasFooter {
-  margin-bottom: 2px; }
-
 .tables p, .tables footer {
   text-align: justify; }
-
-.tables .specialCell {
+.tables p.hasFooter {
+  margin-bottom: 2px; }
+.tables .centeredCell {
   text-align: center;
   vertical-align: middle; }
-
-.specialCell ul {
-  text-align: left;
-  padding-left: 15px; }
-
 .tables .specialWrapper {
   border-left: 3px solid #ab1539;
   border-right: 3px solid #ab1539;
@@ -223,17 +219,12 @@ footer[role="contentinfo"] {
   border-radius: 10px; }
 
 #skillsWrapper {
-  width: 90%;
-  margin: auto;
-  border-top: 2px solid #ab1539;
   padding: 15px;
   margin-bottom: 50px; }
-
-#skillsWrapper blockquote {
-  margin-bottom: 20px; }
-
-#skillsWrapper footer {
-  margin-bottom: 5px; }
+  #skillsWrapper blockquote {
+    margin-bottom: 20px; }
+  #skillsWrapper footer {
+    margin-bottom: 5px; }
 
 .skillList {
   width: 100%;
@@ -249,11 +240,11 @@ footer[role="contentinfo"] {
 #thirdSkillList, #lastSkillList {
   margin-top: 10px; }
 
-.mainTitle-ervaring {
-  margin-top: 30px; }
-
-.title-section {
-  margin-top: 75px; }
+/*sectionContact*/
+footer[role="contentinfo"] {
+  position: absolute;
+  bottom: 5px;
+  left: 5px; }
 
 /*navbar*/
 .navbar-inverse {
@@ -262,30 +253,6 @@ footer[role="contentinfo"] {
 
 .nav-text {
   display: inline; }
-
-/*sections*/
-.section {
-  text-align: center; }
-
-#sectionHero {
-  /*background: url('../images/backgroundNav.png') repeat;*/
-  position: relative; }
-
-img#myHead {
-  position: fixed;
-  width: 120px;
-  z-index: 1031;
-  /*above navbar*/
-  border: 14px solid #ab1539;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-  -ms-border-radius: 500px;
-  border-radius: 500px; }
-
-#contentHero {
-  position: relative;
-  top: 50%;
-  text-align: center; }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -318,13 +285,6 @@ img#myHead {
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   img#myHead {
-    width: 200px; }
-
-  .nav-text {
-    display: inline; } }
-blockquote {
-  width: 60%;
-  margin: auto;
-  border: none; }
+    width: 200px; } }
 
 /*# sourceMappingURL=mainStyle.css.map */

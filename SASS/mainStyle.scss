@@ -15,31 +15,57 @@ a, a:hover, a:visited, a:active, a:focus{
 	text-decoration:none;
 }
 
-#sectionContact a{
-	color:$lightText;
-}
-
-footer[role="contentinfo"]{
-	position: absolute;
-	bottom:5px;
-	left: 5px;
-}
-
-#sectionContact footer[role="contentinfo"] a{
-	color:$accentColor;
+blockquote{
+	width:60%;
+	margin:auto;
+	border:none;
 }
 
 .clearfix{
 	clear:both;
 }
 
-.tables{
-	display: table;
+.section{
+	text-align:center;
+}
+
+hgroup[role="sectionhead"]{
+	margin-top:65px;
+}
+
+/*sectionHero*/
+img#myHead{
+	position:fixed;
+	width:120px;
+	z-index:1031; /*above navbar*/
+	border:14px solid $accentColor;
+	@include border-radius(500px);
+}
+
+#contentHero{
+	position:relative;
+	top:50%;
+}
+
+/*sectionErvaring*/
+.mainTitle-ervaring{
+	margin-top:20px;
+}
+
+.tables, #skillsWrapper{
 	width:90%;
 	margin:auto;
-	border-spacing:10px;
 	border-top:2px solid $accentColor;
+}
+
+.tables{
+	display: table;
+	border-spacing:10px;
 	text-align:left;
+}
+
+#skillsWrapper{
+	
 }
 
 .tableRows{
@@ -50,55 +76,44 @@ footer[role="contentinfo"]{
 	display: table-cell;
 	vertical-align:top;
 	padding:5px;
+	width:50%;
 }
 
-.tables h2{
-	margin-top:0px;
-}
-
-.tables h4, .tables ul{
-	margin-top:-5px;
-}
-
-.tables .hasFooter{
-	margin-bottom:2px;
-}
-
-.tables p, .tables footer{
-	text-align:justify;
-}
-
-.tables .specialCell{
-	text-align:center;
-	vertical-align:middle;
-}
-
-.specialCell ul{
-	text-align:left;
-	padding-left:15px;
-}
-
-.tables .specialWrapper{
-	border-left: 3px solid $accentColor;
-	border-right: 3px solid $accentColor;
-	padding:3px 15px;
-	@include border-radius(10px);
+.tables {
+	h3{
+		margin-top:0px;
+	}
+	h4,ul{
+		margin-top:-5px;
+	}
+	p,footer{
+		text-align:justify;
+	}
+	p.hasFooter{
+		margin-bottom:2px;
+	}
+	.centeredCell{
+		text-align:center;
+		vertical-align:middle;
+	}
+	.specialWrapper{
+		border-left: 3px solid $accentColor;
+		border-right: 3px solid $accentColor;
+		padding:3px 15px;
+		@include border-radius(10px);
+	}
 }
 
 #skillsWrapper{
-	width:90%;
-	margin:auto;
-	border-top:2px solid $accentColor;
 	padding:15px;
 	margin-bottom:50px;
-}
-
-#skillsWrapper blockquote{
-	margin-bottom: 20px;
-}
-
-#skillsWrapper footer{
-	margin-bottom: 5px;
+	
+	blockquote{
+		margin-bottom: 20px;
+	}
+	footer{
+		margin-bottom: 5px;
+	}
 }
 
 .skillList{
@@ -118,12 +133,11 @@ footer[role="contentinfo"]{
 	margin-top:10px;
 }
 
-.mainTitle-ervaring{
-	margin-top:30px;
-}
-
-.title-section{
-	margin-top:75px;
+/*sectionContact*/
+footer[role="contentinfo"]{
+	position: absolute;
+	bottom:5px;
+	left: 5px;
 }
 
 /*navbar*/
@@ -136,31 +150,6 @@ footer[role="contentinfo"]{
 	display:inline;
 }
 
-/*sections*/
-.section{
-	text-align:center;
-}
-
-#sectionHero{
-/*background: url('../images/backgroundNav.png') repeat;*/
-	position:relative;
-}
-
-img#myHead{
-	position:fixed;
-	width:120px;
-	z-index:1031; /*above navbar*/
-	border:14px solid $accentColor;
-	@include border-radius(500px);
-}
-
-
-#contentHero{
-	position:relative;
-	top:50%;
-	text-align:center;
-}
-
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -170,7 +159,7 @@ img#myHead{
 		width:150px;
 	}
 	.nav-text{
-	display:none;
+		display:none;
 	}
 	#thirdSkillList{
 		border-left: 1px solid $accentColor;
@@ -201,15 +190,6 @@ img#myHead{
 	img#myHead{
 		width:200px;
 	}
-	.nav-text{
-		display:inline;
-	}
-}
-
-blockquote{
-	width:60%;
-	margin:auto;
-	border:none;
 }
 
 	

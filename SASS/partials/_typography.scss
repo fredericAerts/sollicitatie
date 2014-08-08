@@ -1,0 +1,95 @@
+body{
+	font-family:$primaryContentFontFamily;
+	font-size:$normalSizeFont;
+}
+
+h1{
+	font-family:$primaryTitleFontFamily;
+}
+
+h2{
+	font-family:$secondaryTitleFontFamily;
+}
+
+.subtitle-section{
+	font-size:1.1em;
+	width:325px; /*equal to divider*/
+	margin:10px auto;
+}
+
+/*navbar*/
+.navbar-inverse{
+	font-family:$headerFontFamily;
+}
+
+/*sectionHero*/
+#sectionHero{
+	h1{
+		font-family:$secondaryTitleFontFamily;
+		font-size:2em;
+	}
+	h2{
+		font-size:1.5em;
+	}
+}
+
+/*sectionErvaring*/
+#sectionErvaring h2{
+	font-size:2.7em;
+}
+
+.tables{ 
+	h3{
+		font-weight:700; /*only on Oswald*/
+		font-size: 2.8em;
+		line-height:0.9em;
+	}
+	h3.tertiaryFont{
+		font-family:$tertiaryTitleFontFamily;
+		font-size: 2em;
+		line-height:1em;
+	}
+	h3.fourthFont{
+		font-family:$fourthTitleFontFamily;
+		@extend .tertiaryFont;
+	}
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	#sectionHero{
+		h1{
+			font-size:3em;
+		}
+		h2{
+			font-size:1.9em;
+		}
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	#sectionHero{
+		h1{
+			font-size:3.5em;
+		}
+		h2{
+			font-size:2.5em;
+		}
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+	#sectionHero{
+		h1{
+			font-size:4em;
+		}
+		h2{
+			font-size:3em;
+		}
+	}
+}
