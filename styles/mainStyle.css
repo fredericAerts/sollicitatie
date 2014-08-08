@@ -1,0 +1,330 @@
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px; }
+
+h1, h2 {
+  font-family: "Fredericka the Great", cursive; }
+
+.title-section {
+  font-family: "Rye", cursive; }
+
+.subtitle-section {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1em;
+  width: 325px;
+  /*equal to divider*/
+  margin: 10px auto; }
+
+.tableCells h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  /*only on Oswald*/
+  font-size: 2.8em;
+  line-height: 0.9em; }
+
+.tableCells .tertiaryFont {
+  font-family: "Titan One", cursive; }
+
+.tableCells .fourthFont {
+  font-family: "Irish Grover", cursive; }
+
+.tableCells .tertiaryFont, .tableCells .fourthFont {
+  font-size: 2em;
+  line-height: 1em; }
+
+.starredTitle {
+  font-size: 1.3em; }
+
+#contentHero h1, #contentHero h2 {
+  font-family: "Fredericka the Great", cursive;
+  color: white; }
+
+.navbar-inverse {
+  font-family: "Cabin Sketch", cursive; }
+
+#contentHero h1 {
+  font-size: 2em; }
+
+#contentHero h2 {
+  font-size: 1.5em; }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #contentHero h1 {
+    font-size: 3em; }
+
+  #contentHero h2 {
+    font-size: 1.9em; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #contentHero h1 {
+    font-size: 3.5em; }
+
+  #contentHero h2 {
+    font-size: 2.5em; } }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #contentHero h1 {
+    font-size: 4em; }
+
+  #contentHero h2 {
+    font-size: 3em; } }
+body {
+  color: #3b3b3b;
+  background: white; }
+
+footer {
+  color: #828282; }
+
+/*dark sections*/
+#sectionHero, #sectionContact {
+  /*background: url('../images/backgroundNav.png') repeat;*/
+  background: #3b3b3b;
+  color: white; }
+
+/*navbar*/
+.navbar-inverse {
+  /*background: url('../images/backgroundNav.png');*/
+  background: #3b3b3b; }
+
+.fav-header, .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
+  color: white; }
+
+.active-nav-icon {
+  color: #ab1539; }
+
+/*section Ervaring*/
+.tableCells h2 {
+  color: #ab1539; }
+
+.tableCells .tertiaryFont, .tableCells .fourthFont {
+  color: #3b3b3b; }
+
+li .glyphicon {
+  color: #ab1539; }
+
+/*section Referenties*/
+.controlArrow.next {
+  border-color: transparent transparent transparent #ab1539; }
+
+.controlArrow.prev {
+  border-color: transparent #ab1539 transparent transparent; }
+
+.fa-li {
+  color: #ab1539; }
+
+.fav-header {
+  padding-top: 3px; }
+
+.hands, .ster, .schoppen {
+  max-height: 100%; }
+
+.iconTitle {
+  white-space: nowrap; }
+
+.starredTitle {
+  margin: 0px -10px; }
+
+#arrowHero {
+  width: 128px; }
+
+#arrowHero:hover {
+  cursor: pointer; }
+
+.controlArrow {
+  margin-top: -20px;
+  /*centered vertically*/ }
+
+.controlArrow.next {
+  border-width: 20px 0px 20px 20px; }
+
+.controlArrow.prev {
+  border-width: 20px 20px 20px 0px; }
+
+.subtitle-divider {
+  width: 300px;
+  margin-bottom: 30px; }
+
+.tables .divider {
+  width: 200px;
+  margin-top: -15px; }
+
+li .glyphicon {
+  float: right; }
+
+body {
+  position: relative; }
+
+section, article, header, footer, hgroup {
+  display: block; }
+
+a, a:hover, a:visited, a:active, a:focus {
+  text-decoration: none; }
+
+#sectionContact a {
+  color: white; }
+
+footer[role="contentinfo"] {
+  position: absolute;
+  bottom: 5px;
+  left: 5px; }
+
+#sectionContact footer[role="contentinfo"] a {
+  color: #ab1539; }
+
+.clearfix {
+  clear: both; }
+
+.tables {
+  display: table;
+  width: 90%;
+  margin: auto;
+  border-spacing: 10px;
+  border-top: 2px solid #ab1539;
+  text-align: left; }
+
+.tableRows {
+  display: table-row; }
+
+.tableCells {
+  display: table-cell;
+  vertical-align: top;
+  padding: 5px; }
+
+.tables h2 {
+  margin-top: 0px; }
+
+.tables h4, .tables ul {
+  margin-top: -5px; }
+
+.tables .hasFooter {
+  margin-bottom: 2px; }
+
+.tables p, .tables footer {
+  text-align: justify; }
+
+.tables .specialCell {
+  text-align: center;
+  vertical-align: middle; }
+
+.specialCell ul {
+  text-align: left;
+  padding-left: 15px; }
+
+.tables .specialWrapper {
+  border-left: 3px solid #ab1539;
+  border-right: 3px solid #ab1539;
+  padding: 3px 15px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+#skillsWrapper {
+  width: 90%;
+  margin: auto;
+  border-top: 2px solid #ab1539;
+  padding: 15px;
+  margin-bottom: 50px; }
+
+#skillsWrapper blockquote {
+  margin-bottom: 20px; }
+
+#skillsWrapper footer {
+  margin-bottom: 5px; }
+
+.skillList {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  list-style-type: none;
+  border-left: 1px solid #ab1539;
+  font-weight: 700; }
+
+#firstSkillList, #thirdSkillList {
+  border: none; }
+
+#thirdSkillList, #lastSkillList {
+  margin-top: 10px; }
+
+.mainTitle-ervaring {
+  margin-top: 30px; }
+
+.title-section {
+  margin-top: 75px; }
+
+/*navbar*/
+.navbar-inverse {
+  /*background: url('../images/backgroundNav.png');*/
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.2) !important; }
+
+.nav-text {
+  display: inline; }
+
+/*sections*/
+.section {
+  text-align: center; }
+
+#sectionHero {
+  /*background: url('../images/backgroundNav.png') repeat;*/
+  position: relative; }
+
+img#myHead {
+  position: fixed;
+  width: 120px;
+  z-index: 1031;
+  /*above navbar*/
+  border: 14px solid #ab1539;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  border-radius: 500px; }
+
+#contentHero {
+  position: relative;
+  top: 50%;
+  text-align: center; }
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  img#myHead {
+    width: 150px; }
+
+  .nav-text {
+    display: none; }
+
+  #thirdSkillList {
+    border-left: 1px solid #ab1539;
+    margin-top: 0px; }
+
+  #lastSkillList {
+    border-left: none;
+    margin-top: 10px; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  img#myHead {
+    width: 170px; }
+
+  .nav-text {
+    display: inline; }
+
+  #lastSkillList {
+    border-left: 1px solid #ab1539;
+    margin-top: 0px; } }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  img#myHead {
+    width: 200px; }
+
+  .nav-text {
+    display: inline; } }
+blockquote {
+  width: 60%;
+  margin: auto;
+  border: none; }
+
+/*# sourceMappingURL=mainStyle.css.map */

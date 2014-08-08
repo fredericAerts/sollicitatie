@@ -1,0 +1,29 @@
+//colors
+$darkBackground:#3b3b3b;
+$lightBackground:#fff;
+$lightText: #fff;
+$mediumLightText: #828282;
+$darkText: #3b3b3b;
+$accentColor: #ab1539;
+
+// Fonts
+$headerFontFamily: 'Cabin Sketch', cursive;
+$primaryTitleFontFamily:'Rye', cursive;
+$secondaryTitleFontFamily:'Fredericka the Great', cursive;
+$tertiaryTitleFontFamily:'Titan One', cursive;
+$fourthTitleFontFamily:'Irish Grover', cursive;
+$primaryContentFontFamily:'Oswald', sans-serif;
+$normalSizeFont:14px;
+
+//functions
+@function left-pos-center-function($container-width, $element-width){
+  @return ($container-width/2) - ($element-width/2)
+}
+
+//mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}

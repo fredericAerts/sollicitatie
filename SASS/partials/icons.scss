@@ -1,0 +1,53 @@
+.fa-li{
+	color:$accentColor;
+}
+
+.fav-header{
+	padding-top:3px;
+}
+
+.hands, .ster, .schoppen{
+	max-height:100%;
+}
+
+.iconTitle{
+	white-space: nowrap;
+}
+
+.starredTitle{
+	margin:0px -10px;
+}
+
+#arrowHero{
+	width:128px;
+}
+
+#arrowHero:hover{
+	cursor:pointer;
+}
+
+.controlArrow{
+	margin-top:-20px; /*centered vertically*/
+}
+
+.controlArrow.next{
+	border-width:20px 0px 20px 20px;
+}
+
+.controlArrow.prev{
+	border-width:20px 20px 20px 0px;
+}
+
+.subtitle-divider{
+	width:300px;
+	margin-bottom:30px;
+}
+
+.tables .divider{
+	width:200px;
+	margin-top:-15px;
+}
+
+li .glyphicon{
+	float:right;
+}

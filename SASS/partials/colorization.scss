@@ -1,0 +1,51 @@
+body{
+	color:$darkText;
+	background:$lightBackground;
+}
+
+footer{
+	color:$mediumLightText;
+}
+
+/*dark sections*/
+#sectionHero, #sectionContact{
+/*background: url('../images/backgroundNav.png') repeat;*/
+	background:$darkBackground;
+	color:$lightText;
+}
+
+/*navbar*/
+.navbar-inverse{
+	/*background: url('../images/backgroundNav.png');*/
+	background:$darkBackground;
+}
+
+.fav-header, .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand{
+	color:$lightText;
+}
+
+.active-nav-icon{
+	color:$accentColor;
+}
+
+/*section Ervaring*/
+.tableCells h2{
+	color:$accentColor;
+}
+
+.tableCells .tertiaryFont, .tableCells .fourthFont{
+	color:$darkText;
+}
+
+li .glyphicon{
+	color:$accentColor;
+}
+
+/*section Referenties*/
+.controlArrow.next{
+	border-color: transparent transparent transparent $accentColor;
+}
+
+.controlArrow.prev{
+	border-color: transparent $accentColor transparent transparent;
+}

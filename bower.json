@@ -1,0 +1,13 @@
+{
+  "name": "frederic_aerts",
+  "version": "2.0",
+  "dependencies": {
+    "bootstrap": "latest",
+    "bootstrap-sass-official": "latest",
+    "fontawesome": "latest",
+    "fullpage.js": "latest"
+  },
+  "devDependencies": {
+    "html5shiv": "~3.7.2"
+  }
+}
