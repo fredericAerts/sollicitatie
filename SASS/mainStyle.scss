@@ -48,38 +48,26 @@ img#myHead{
 }
 
 /*sectionErvaring*/
-.mainTitle-ervaring{
-	margin-top:20px;
-}
-
 .tables, #skillsWrapper{
 	width:90%;
 	margin:auto;
 	border-top:2px solid $accentColor;
 }
 
-.tables{
+.tables {
 	display: table;
 	border-spacing:10px;
 	text-align:left;
-}
 
-#skillsWrapper{
-	
-}
-
-.tableRows{
-	display: table-row;
-}
-
-.tableCells{
-	display: table-cell;
-	vertical-align:top;
-	padding:5px;
-	width:50%;
-}
-
-.tables {
+	.tableRows{
+		display: table-row;
+	}
+	.tableCells{
+		display: table-cell;
+		vertical-align:top;
+		padding:5px;
+		width:50%;
+	}
 	h3{
 		margin-top:0px;
 	}

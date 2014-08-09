@@ -2,16 +2,21 @@
 	padding-top:3px;
 }
 
-.hands, .ster, .schoppen{
+.hands{
 	max-height:100%;
+}
+
+.ster,.schoppen{
+	@extend .hands;
+	vertical-align:baseline;
 }
 
 .iconTitle{
 	white-space: nowrap;
 }
 
-.starredTitle{
-	margin:0px -10px;
+span.starredTitle{
+	margin:0px -10px; 
 }
 
 #arrowHero{
