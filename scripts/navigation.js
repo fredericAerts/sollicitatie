@@ -1,33 +1,3 @@
-//globals
-var _myHeadOnHeroWidth = $('#myHead').width();
-var _myHeadOnHeroHeight = $('#myHead').height();
-var _myHeadBorderWidth = 14 /*static*/
-var _onHero = true;
-
-$("#myHead").css('left', ($(window).width() / 2) - ($('#myHead').width()/2) - _myHeadBorderWidth);
-$("#myHead").css('top', ($(window).height() / 2) - $('#myHead').height() - _myHeadBorderWidth);
-
-$( document ).ready(function() {
-    $('.navbar-brand').click(function(){
-        $.fn.fullpage.moveTo(1);
-    });
-   $('#arrowHero').click(function(){
-        $.fn.fullpage.moveTo(2);
-    }); 
-   $('#navMotivatie').click(function(){
-        $.fn.fullpage.moveTo(2);
-    });
-   $('#navErvaring').click(function(){
-        $.fn.fullpage.moveTo(3);
-    });
-   $('#navReferenties').click(function(){
-        $.fn.fullpage.moveTo(4);
-    });
-   $('#navContact').click(function(){
-        $.fn.fullpage.moveTo(5);
-    });
-});
-
 $(document).ready(function() {
     $('#fullpage').fullpage({
     	verticalCentered: false,
@@ -86,7 +56,7 @@ $(document).ready(function() {
         },
         afterLoad: function(anchorLink, index){
             //using index
-            if(index == '4'){
+            if(index == 4){
                 $.fn.fullpage.moveTo(4, 0);
                 slideTimeout = setTimeout(function(){
                     $.fn.fullpage.moveSlideRight();
@@ -104,23 +74,49 @@ $(document).ready(function() {
     });
 });
 
+$( document ).ready(function() {
+    $('.navbar-brand').click(function(){
+        $.fn.fullpage.moveTo(1);
+    });
+   $('#arrowHero').click(function(){
+        $.fn.fullpage.moveTo(2);
+    }); 
+   $('#navMotivatie').click(function(){
+        $.fn.fullpage.moveTo(2);
+    });
+   $('#navErvaring').click(function(){
+        $.fn.fullpage.moveTo(3);
+    });
+   $('#navReferenties').click(function(){
+        $.fn.fullpage.moveTo(4);
+    });
+   $('#navContact').click(function(){
+        $.fn.fullpage.moveTo(5);
+    });
+});
+
 function positionMyHeadToHero(){
-	var myHeadLeftPos = ($(window).width() / 2) - (_myHeadOnHeroWidth/2) - _myHeadBorderWidth;
-	var myHeadTopPos = ($(window).height() / 2) - _myHeadOnHeroHeight  - _myHeadBorderWidth;
 	$( "#myHead" ).animate({
-		width: _myHeadOnHeroWidth + "px",
-		left: myHeadLeftPos + "px",
-		top: myHeadTopPos + "px"
+		width: "180px",
+		left: ($(window).width() / 2) + "px", /*left:50%;*/
+        marginLeft: "-90px",
+		top: ($(window).height() / 5) + "px" /*top:20%;*/
 	},700,"easeInQuart");
+    setTimeout(function(){
+        $("#myHead").css({left: "50%"}); 
+        $("#myHead").css({top: "20%"}); 
+    },750);
 }
 
 function positionMyHeadToHeader(){
-	var myHeadLeftPos = ($(window).width() / 2) - 50;
-	var myHeadTopPos = 5;
 	$( "#myHead" ).animate({
 		width: "100px",
-		left: myHeadLeftPos + "px",
-		top: myHeadTopPos + "px"
+		left: ($(window).width() / 2) + "px", /*left:50%;*/
+        marginLeft: "-50px",
+		top: "5px"
 	},700,"easeInQuart");
+    setTimeout(function(){
+        $("#myHead").css({left: "50%"}); 
+    },750);  
 }
 

@@ -1,5 +1,8 @@
 /*colors*/
 /* Fonts*/
+@font-face {
+  font-family: Roundup;
+  src: url(../fonts/Roundup.ttf); }
 /*functions*/
 /*mixins*/
 body {
@@ -7,70 +10,74 @@ body {
   font-size: 14px; }
 
 h1 {
-  font-family: "Rye", cursive; }
+  font-family: "Rye", cursive;
+  font-size: 35px; }
 
 h2 {
-  font-family: "Fredericka the Great", cursive; }
+  font-family: "Fredericka the Great", cursive;
+  font-size: 45px; }
+
+h3 {
+  font-weight: 700;
+  /*only on Oswald*/
+  font-size: 35px;
+  line-height: 0.9em; }
 
 .subtitle-section {
-  font-size: 1.1em;
+  font-size: 17px;
   width: 325px;
   /*equal to divider*/
   margin: 10px auto; }
 
 /*navbar*/
-.navbar-inverse {
-  font-family: "Cabin Sketch", cursive; }
-
 /*sectionHero*/
 #sectionHero h1 {
   font-family: "Fredericka the Great", cursive;
-  font-size: 2em; }
+  font-size: 30px; }
 #sectionHero h2 {
-  font-size: 1.5em; }
+  font-size: 20px; }
+
+/*sectionMotivatie*/
+#wantedWrapper {
+  font-family: "Roundup", sans-serif;
+  font-size: 20px;
+  line-height: 0.75em; }
+  #wantedWrapper h2 {
+    font-family: "Roundup", sans-serif;
+    font-size: 70px;
+    line-height: 0.7em; }
+  #wantedWrapper h4 {
+    font-size: 25px;
+    line-height: 0.7em; }
 
 /*sectionErvaring*/
-#sectionErvaring h2 {
-  font-size: 2.7em; }
-
-.tables h3 {
-  font-weight: 700;
-  /*only on Oswald*/
-  font-size: 2.8em;
-  line-height: 0.9em; }
-.tables h3.tertiaryFont, .tables h3.fourthFont {
-  font-family: "Titan One", cursive;
-  font-size: 2em;
-  line-height: 1em; }
-.tables h3.fourthFont {
-  font-family: "Irish Grover", cursive; }
-
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #sectionHero h1 {
-    font-size: 3em; }
+    font-size: 35px; }
   #sectionHero h2 {
-    font-size: 1.9em; } }
+    font-size: 30px; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #sectionHero h1 {
-    font-size: 3.5em; }
+    font-size: 45px; }
   #sectionHero h2 {
-    font-size: 2.5em; } }
+    font-size: 35px; } }
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  #sectionHero h1 {
-    font-size: 4em; }
-  #sectionHero h2 {
-    font-size: 3em; } }
 body {
   color: #3b3b3b;
   background: white; }
 
 footer {
   color: #828282; }
+
+h3 {
+  color: #ab1539; }
+
+.specialErvaring h3 {
+  color: #3b3b3b; }
 
 /*dark sections*/
 #sectionHero, #sectionContact {
@@ -86,11 +93,6 @@ footer {
     color: #ab1539; }
 
 /*section Ervaring*/
-.tableCells h3 {
-  color: #ab1539; }
-.tableCells h3.tertiaryFont, .tableCells .tables h3.fourthFont, .tables .tableCells h3.fourthFont, .tableCells h3.fourthFont {
-  color: #3b3b3b; }
-
 #sectionErvaring li .fa-li, #sectionErvaring li .glyphicon {
   color: #ab1539; }
 
@@ -137,8 +139,7 @@ span.starredTitle {
   border-width: 20px 20px 20px 0px; }
 
 .subtitle-divider {
-  width: 300px;
-  margin-bottom: 30px; }
+  width: 300px; }
 
 li .glyphicon {
   float: right; }
@@ -148,6 +149,9 @@ body {
 
 section, article, header, footer, hgroup {
   display: block; }
+
+h3 {
+  margin-top: 0px; }
 
 a, a:hover, a:visited, a:active, a:focus {
   text-decoration: none; }
@@ -160,6 +164,9 @@ blockquote {
 .clearfix {
   clear: both; }
 
+.specialChar {
+  font-family: "Oswald", sans-serif; }
+
 .section {
   text-align: center; }
 
@@ -169,7 +176,10 @@ hgroup[role="sectionhead"] {
 /*sectionHero*/
 img#myHead {
   position: fixed;
-  width: 120px;
+  width: 180px;
+  left: 50%;
+  top: 20%;
+  margin-left: -90px;
   z-index: 1031;
   /*above navbar*/
   border: 14px solid #ab1539;
@@ -181,6 +191,65 @@ img#myHead {
 #contentHero {
   position: relative;
   top: 50%; }
+
+/*section Motivatie*/
+#titleOneMotivatie, #titleTwoMotivatie {
+  width: 49%; }
+
+#titleOneMotivatie {
+  float: left;
+  text-align: left; }
+
+#titleTwoMotivatie {
+  float: right;
+  text-align: right; }
+
+#wantedWrapper {
+  position: relative;
+  width: 300px;
+  height: 325px;
+  margin: auto;
+  padding: 20px;
+  background-image: url(../images/frame.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #wantedWrapper h2 {
+    margin: 0px; }
+  #wantedWrapper .wantedText {
+    margin: 0px; }
+  #wantedWrapper .dividerWanted {
+    width: 50%; }
+  #wantedWrapper #lastText {
+    position: absolute;
+    width: 260px;
+    left: 20px;
+    bottom: 20px; }
+
+#floatBothWrap {
+  width: 90%;
+  margin: auto; }
+
+#whoAmI, #verantwoording {
+  width: 49%;
+  text-align: justify;
+  margin-top: -325px; }
+
+#whoAmI {
+  float: left; }
+
+#verantwoording {
+  float: right; }
+
+#whoAmI:before, #verantwoording:before {
+  content: "";
+  width: 170px;
+  height: 345px; }
+
+#whoAmI:before {
+  float: right; }
+
+#verantwoording:before {
+  float: left; }
 
 /*sectionErvaring*/
 .tables, #skillsWrapper {
@@ -199,8 +268,6 @@ img#myHead {
     vertical-align: top;
     padding: 5px;
     width: 50%; }
-  .tables h3 {
-    margin-top: 0px; }
   .tables h4, .tables ul {
     margin-top: -5px; }
   .tables p, .tables footer {
@@ -259,9 +326,6 @@ footer[role="contentinfo"] {
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  img#myHead {
-    width: 150px; }
-
   .nav-text {
     display: none; }
 
@@ -274,9 +338,6 @@ footer[role="contentinfo"] {
     margin-top: 10px; } }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  img#myHead {
-    width: 170px; }
-
   .nav-text {
     display: inline; }
 
@@ -284,8 +345,5 @@ footer[role="contentinfo"] {
     border-left: 1px solid #ab1539;
     margin-top: 0px; } }
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  img#myHead {
-    width: 200px; } }
 
 /*# sourceMappingURL=mainStyle.css.map */

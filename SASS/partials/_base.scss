@@ -7,12 +7,21 @@ $darkText: #3b3b3b;
 $accentColor: #ab1539;
 
 /* Fonts*/
-$headerFontFamily: 'Cabin Sketch', cursive;
-$primaryTitleFontFamily:'Rye', cursive;
-$secondaryTitleFontFamily:'Fredericka the Great', cursive;
-$tertiaryTitleFontFamily:'Titan One', cursive;
-$fourthTitleFontFamily:'Irish Grover', cursive;
-$primaryContentFontFamily:'Oswald', sans-serif;
+@font-face {
+    font-family: Roundup;
+    src: url(../fonts/Roundup.ttf);
+}
+$mainFontFamily: 'Oswald', sans-serif;
+$mainTitleFontFamily:'Fredericka the Great', cursive;
+$sectionTitleFontFamily:'Rye', cursive;
+$posterFontFamily:'Roundup',sans-serif;
+$megaSizeFont:70px;
+$hugeSizeFont:45px;
+$biggestSizeFont:35px;
+$biggerSizeFont:30px;
+$littleBiggerSizeFont:25px;
+$bigSizeFont:20px;
+$largeSizeFont:17px;
 $normalSizeFont:14px;
 
 /*functions*/

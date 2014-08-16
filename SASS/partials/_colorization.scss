@@ -7,6 +7,14 @@ footer{
 	color:$mediumLightText;
 }
 
+h3{
+	color:$accentColor;
+}
+
+.specialErvaring h3{
+	color:$darkText;
+}
+
 /*dark sections*/
 #sectionHero, #sectionContact{
 	background:$darkBackground;
@@ -26,14 +34,6 @@ footer{
 }
 
 /*section Ervaring*/
-.tableCells{
-	h3{
-		color:$accentColor;
-	}
-	h3.tertiaryFont,h3.fourthFont{
-		color:$darkText;
-	}
-}
 
 #sectionErvaring li{
 	.fa-li,.glyphicon{
