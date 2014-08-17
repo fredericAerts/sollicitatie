@@ -5,24 +5,26 @@ body{
 
 h1{
 	font-family:$sectionTitleFontFamily;
-	font-size: $biggestSizeFont;
+	font-size: $bigSizeFont;
 }
 
 h2{
 	font-family:$mainTitleFontFamily;
-	font-size: $hugeSizeFont;
+	font-size: $littleBiggerSizeFont;
 }
 
 h3{
+	font-size: $bigSizeFont;
 	font-weight:700; /*only on Oswald*/
-	font-size: $biggestSizeFont;
 	line-height:0.9em;
 }
 
+blockquote{
+	font-size: $normalSizeFont;
+}
+
 .subtitle-section{
-	font-size:$largeSizeFont;
-	width:325px; /*equal to divider*/
-	margin:10px auto;
+	font-size:$normalSizeFont;
 }
 
 /*navbar*/
@@ -53,16 +55,26 @@ h3{
 	}
 }
 
-/*sectionErvaring*/
-#sectionErvaring h2{
-	
-}
-
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	h1{
+		font-size: $biggestSizeFont;
+	}
+	h2{
+		font-size: $hugeSizeFont;
+	}
+	h3{
+		font-size: $biggestSizeFont;
+	}
+	.subtitle-section{
+		font-size:$largeSizeFont;
+	}
+	blockquote{
+		font-size: $bigSizeFont;
+	}
 	#sectionHero{
 		h1{
 			font-size:$biggestSizeFont;

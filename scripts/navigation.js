@@ -78,6 +78,9 @@ $( document ).ready(function() {
     $('.navbar-brand').click(function(){
         $.fn.fullpage.moveTo(1);
     });
+    $('#myHead').click(function(){
+        $.fn.fullpage.moveTo(1);
+    });
    $('#arrowHero').click(function(){
         $.fn.fullpage.moveTo(2);
     }); 
@@ -103,12 +106,17 @@ function positionMyHeadToHero(){
 		top: ($(window).height() / 5) + "px" /*top:20%;*/
 	},700,"easeInQuart");
     setTimeout(function(){
-        $("#myHead").css({left: "50%"}); 
-        $("#myHead").css({top: "20%"}); 
+        $("#myHead").css({
+            left: "50%",
+            top: "20%",
+            zIndex: "0",
+            cursor: "auto"
+        }); 
     },750);
 }
 
 function positionMyHeadToHeader(){
+     $("#myHead").css({zIndex: "1031"}); /*above navbar*/
 	$( "#myHead" ).animate({
 		width: "100px",
 		left: ($(window).width() / 2) + "px", /*left:50%;*/
@@ -116,7 +124,10 @@ function positionMyHeadToHeader(){
 		top: "5px"
 	},700,"easeInQuart");
     setTimeout(function(){
-        $("#myHead").css({left: "50%"}); 
+        $("#myHead").css({
+            left: "50%",
+            cursor: "pointer"
+        }); 
     },750);  
 }
 

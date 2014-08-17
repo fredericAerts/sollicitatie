@@ -11,17 +11,14 @@ section, article, header, footer, hgroup{
 	display:block;
 }
 
-h3{
-	margin-top:0px;
-}
-
 a, a:hover, a:visited, a:active, a:focus{
 	text-decoration:none;
 }
 
 blockquote{
-	width:60%;
+	width:80%;
 	margin:auto;
+	margin-bottom: 20px;
 	border:none;
 }
 
@@ -41,6 +38,11 @@ hgroup[role="sectionhead"]{
 	margin-top:65px;
 }
 
+.subtitle-section{
+	width:325px; /* ~equal to divider*/
+	margin:10px auto;
+}
+
 /*sectionHero*/
 img#myHead{
 	position:fixed;
@@ -48,7 +50,6 @@ img#myHead{
 	left:50%;
 	top:20%;
 	margin-left:-90px;
-	z-index:1031; /*above navbar*/
 	border:14px solid $accentColor;
 	@include border-radius(500px);
 }
@@ -73,20 +74,29 @@ img#myHead{
 	text-align:right;
 }
 
+#floatBothWrap { /* wantedWrapper is fitted in here @media (min-width: 768px) */
+	width: 90%; 
+	margin: auto;
+	#whoAmI, #verantwoording { 
+		width: 47%;
+		text-align:justify;
+	}
+	#whoAmI, #verantwoording:before { 
+		float: left; 
+	}
+	#verantwoording, #whoAmI:before { 
+		float: right; 
+	}
+}
 
 #wantedWrapper{
+	display:none; /*becomes visible @media (min-width: 768px) */
 	position:relative;
 	width: 300px;
 	height:325px;
 	margin:auto;
 	padding:20px;
-	background-image: url(../images/frame.png);
-	background-repeat:no-repeat;
-	background-size: cover;
-	h2{
-		margin:0px;
-	}
-	.wantedText{
+	h2, .wantedText{
 		margin:0px;
 	}
 	.dividerWanted{
@@ -99,19 +109,7 @@ img#myHead{
 		bottom:20px;
 	}
 }
-	
-#floatBothWrap { width: 90%; margin: auto; }
-
-#whoAmI, #verantwoording { width: 49%;text-align:justify; margin-top:-325px;}
-#whoAmI { float: left; }
-#verantwoording { float: right; }
 		
-#whoAmI:before, #verantwoording:before { content: ""; width: 170px; height: 345px; }
-		
-#whoAmI:before { float: right; }
-#verantwoording:before { float: left; }
-
-
 /*sectionErvaring*/
 .tables, #skillsWrapper{
 	width:90%;
@@ -123,7 +121,6 @@ img#myHead{
 	display: table;
 	border-spacing:10px;
 	text-align:left;
-
 	.tableRows{
 		display: table-row;
 	}
@@ -132,6 +129,9 @@ img#myHead{
 		vertical-align:top;
 		padding:5px;
 		width:50%;
+	}
+	h3{
+		margin-top:0px;
 	}
 	h4,ul{
 		margin-top:-5px;
@@ -155,12 +155,7 @@ img#myHead{
 }
 
 #skillsWrapper{
-	padding:15px;
 	margin-bottom:50px;
-	
-	blockquote{
-		margin-bottom: 20px;
-	}
 	footer{
 		margin-bottom: 5px;
 	}
@@ -169,18 +164,15 @@ img#myHead{
 .skillList{
 	width:100%;
 	margin:auto;
+	padding-left:0px;
 	text-align:left;
 	list-style-type: none;
 	border-left: 1px solid $accentColor;
 	font-weight:700;
 }
 
-#firstSkillList, #thirdSkillList{
+#firstSkillList, #secondSkillList, #thirdSkillList, #lastSkillList{
 	border:none;
-}
-
-#thirdSkillList, #lastSkillList{
-	margin-top:10px;
 }
 
 /*sectionContact*/
@@ -205,16 +197,40 @@ footer[role="contentinfo"]{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+	blockquote{
+		width:60%;
+	}
+	.slide blockquote{
+		margin-top:5%;
+	}
 	.nav-text{
 		display:none;
 	}
-	#thirdSkillList{
+	.skillList{
+		padding-left:30px;
+	}
+	#thirdSkillList,#secondSkillList{
 		border-left: 1px solid $accentColor;
 		margin-top:0px;
 	}
 	#lastSkillList{
 		border-left: none;
 		margin-top:10px;
+	}
+	/* place wantedPoster */
+	#wantedWrapper{
+		display: block;
+		background-image: url(../images/frame.png);
+		background-repeat:no-repeat;
+		background-size: cover;
+	}
+	#whoAmI, #verantwoording { 
+		margin-top:-325px;
+	}
+	#whoAmI:before, #verantwoording:before { 
+		content: ""; 
+		width: 150px; 
+		height: 325px; 
 	}
 }
 

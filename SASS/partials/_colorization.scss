@@ -3,10 +3,6 @@ body{
 	background:$lightBackground;
 }
 
-footer{
-	color:$mediumLightText;
-}
-
 h3{
 	color:$accentColor;
 }
@@ -15,16 +11,22 @@ h3{
 	color:$darkText;
 }
 
+footer{
+	color:$mediumLightText;
+}
+
 /*dark sections*/
 #sectionHero, #sectionContact{
 	background:$darkBackground;
 	color:$lightText;
+	a {
+		color:$lightText;
+	}
 }
 
 /*navbar*/
 .navbar-inverse{
 	background:$darkBackground;
-
 	.fav-header,.navbar-nav > li > a, .navbar-brand{
 		color:$lightText;
 	}
@@ -34,7 +36,6 @@ h3{
 }
 
 /*section Ervaring*/
-
 #sectionErvaring li{
 	.fa-li,.glyphicon{
 		color:$accentColor;
@@ -52,9 +53,6 @@ h3{
 
 /*sectionContact*/
 #sectionContact{
-	a{
-		color:$lightText;
-	}
 	footer[role="contentinfo"] a{
 		color:$accentColor;
 	}
