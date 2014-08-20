@@ -133,9 +133,6 @@ footer {
   height: 15px;
   vertical-align: baseline; }
 
-span.starredTitle {
-  margin: 0px -5px; }
-
 .iconTitle {
   white-space: nowrap; }
 
@@ -167,10 +164,7 @@ li .glyphicon {
     height: 20px; }
 
   .ster {
-    height: 22px; }
-
-  span.starredTitle {
-    margin: 0px -10px; } }
+    height: 22px; } }
 body {
   position: relative; }
 
@@ -374,5 +368,3 @@ footer[role="contentinfo"] {
     border-left: 1px solid #ab1539;
     margin-top: 0px; } }
 /* Large devices (large desktops, 1200px and up) */
-
-/*# sourceMappingURL=mainStyle.css.map */

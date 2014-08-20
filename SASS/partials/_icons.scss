@@ -11,12 +11,12 @@
 	vertical-align:baseline;
 }
 
-.iconTitle{
-	white-space: nowrap;
+span.starredTitle{
+	margin:0px -5px; 
 }
 
-span.starredTitle{
-	margin:0px -10px; 
+.iconTitle{
+	white-space: nowrap;
 }
 
 #arrowHero{
@@ -46,7 +46,16 @@ li .glyphicon{
 }
 
 @media (min-width: 768px) {
-	.hands,.ster,.schoppen{
-		height:100%;
+	.hands{
+		height:32px;
+	}
+	.schoppen{
+		height:20px;
+	}
+	.ster{
+		height:22px;
+	}
+	span.starredTitle{
+		margin:0px -10px; 
 	}
 }
