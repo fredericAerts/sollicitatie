@@ -82,9 +82,9 @@ blockquote {
 /* Large devices (large desktops, 1200px and up) */
 body {
   color: #3b3b3b;
-  background: white; }
+  background: #fff; }
 
-h3 {
+h3, .tables a {
   color: #ab1539; }
 
 .specialErvaring h3 {
@@ -96,15 +96,15 @@ footer {
 /*dark sections*/
 #sectionHero, #sectionContact {
   background: #3b3b3b;
-  color: white; }
+  color: #fff; }
   #sectionHero a, #sectionContact a {
-    color: white; }
+    color: #fff; }
 
 /*navbar*/
 .navbar-inverse {
   background: #3b3b3b; }
   .navbar-inverse .fav-header, .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
-    color: white; }
+    color: #fff; }
   .navbar-inverse .fav-header-active {
     color: #ab1539; }
 
@@ -285,6 +285,8 @@ img#myHead {
     margin-top: -5px; }
   .tables p, .tables footer {
     text-align: justify; }
+  .tables ul footer {
+    text-align: left; }
   .tables p.hasFooter {
     margin-bottom: 2px; }
   .tables .centeredCell {
