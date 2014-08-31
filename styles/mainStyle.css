@@ -2,7 +2,7 @@
 /* Fonts*/
 @font-face {
   font-family: Roundup;
-  src: url(../fonts/Roundup.ttf); }
+  src: url(../fonts/Roundup.woff) format("woff"), url(../fonts/Roundup.ttf) format("truetype"); }
 /*functions*/
 /*mixins*/
 body {
